@@ -17,13 +17,13 @@ import android.widget.Button;
 
 public class MainActivity2 extends AppCompatActivity {
     Button btn2;
+    Intent intent = getIntent();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         btn2 = findViewById(R.id.btn2);
         // This parameter is of intent type and it receives the intent that is assigned from the first activity
-        Intent intent = getIntent();
     }
     /**
      * The action accepts a parameter of type menu
@@ -67,7 +67,7 @@ public class MainActivity2 extends AppCompatActivity {
      * It sends the intent to the previous activity
      */
     public void go2(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+        intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
