@@ -1,8 +1,8 @@
 package com.example.proj3;
 /** @author Created by karin on 18/9/2023.
- * @version 0.0
- * @since 18/9/2023
- *The application has a general menu with 3 colors, clicking on any color will change the background on the screen to the corresponding color
+ * @version 1.1
+ * @since 21/11/2023
+ *The application has a general menu with 3 colors, clicking on any color will change the background on the screen to the corresponding color. and there is a button which sends you to the next activity.
  */
 
 import androidx.annotation.NonNull;
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
      * It sends the intent to the next activity
      */
     public void go(View view){
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, FourOptionsMenu.class);
         startActivity(intent);
     }
 }

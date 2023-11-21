@@ -7,7 +7,7 @@
     android:gravity="center"
     android:onClick="NextActivity"
     android:orientation="vertical"
-    tools:context=".MainActivity2">
+    tools:context=".FourOptionsMenu">
 
     <Space
         android:layout_width="match_parent"

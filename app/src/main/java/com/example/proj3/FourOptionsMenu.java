@@ -1,8 +1,8 @@
 package com.example.proj3;
 /** @author Created by karin on 18/9/2023.
- * @version 0.0
- * @since 18/9/2023
- *In this Activity you will have the option to choose another color in addition to the other three colors
+ * @version 1.1
+ * @since 21/11/2023
+ *In this Activity you will have the option to choose another color in addition to the other three colors, and there is a button which sends you back to the main activity.
  */
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,13 +15,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity2 extends AppCompatActivity {
+public class FourOptionsMenu extends AppCompatActivity {
     Button btn2;
     Intent intent = getIntent();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.four_options_menu);
         btn2 = findViewById(R.id.btn2);
         // This parameter is of intent type and it receives the intent that is assigned from the first activity
     }
